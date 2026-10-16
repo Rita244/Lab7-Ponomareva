@@ -183,3 +183,36 @@
 //         PrintCharacterReport("Саша", 3, "Марвел");
 //     }
 // }
+
+
+// ### Базовое
+
+// void SwapFavorites(ref string itemA, ref string itemB)
+// {
+//     string temp = itemA;
+//     itemA = itemB;
+//     itemB = temp;
+// }
+
+// string fav1 = "Наушники", fav2 = "Клавиатура";
+// SwapFavorites(ref fav1, ref fav2);
+// Console.WriteLine($"{fav1}, {fav2}");
+
+
+// ### Среднее
+
+// bool TryWithdraw(decimal balance, decimal amount, out decimal remaining)
+// {
+//     if (amount <= 0 || amount > balance)
+//     {
+//         remaining = balance;
+//         return false;
+//     }
+//     remaining = balance - amount;
+//     return true;
+// }
+
+// if (TryWithdraw(1000m, 300m, out decimal rest))
+//     Console.WriteLine($"Списано, остаток: {rest}");
+// else
+//     Console.WriteLine("Операция отклонена");
